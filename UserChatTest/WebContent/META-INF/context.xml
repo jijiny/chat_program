@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/UserChatTest" docBase="www">
+	<Resource
+		name="jdbc/UserChatTest"
+		auth="Container"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		type="javax.sql.DataSource"
+		validationQuery="SELECT 1 FROM DUAL"
+		maxWait="5000"
+		username="semichat"
+		password="1234"
+		url="jdbc:oracle:thin:@localhost:1521:xe"/>
+	<ResourceLink type="javax.sql.data.DataSource"
+		name="jdbc/UserChatTest"
+		global="jdbc/UserChatTest"/>
+		
+		<!-- <Resource 
+		 name= "jdbc/UserChat"
+ 		 auth = "Container"
+ 		 driverClassName = "oracle.jdbc.driver.OracleDriver"
+ 		 type = "javax.sql.DataSource"
+ 		 url = "jdbc:oracle:thin:@localhost:1521:xe"
+ 		 username = "changyj"
+ 		 password = "100114"
+ 		 maxWait = "5000"  /> -->
+	
+</Context>
